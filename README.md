@@ -1,43 +1,49 @@
-# Desarrollo y evaluación de algoritmos para el mapeo de entornos y generación de trayectorias utilizando sistemas robóticos multi-agente
+# Descripción del Proyecto
 
-Este trabajo de investigación se enfocó en la creación y combinación de tres algoritmos
-principales relacionados con la navegación autónoma de vehículos de tracción diferencial.
-Los tres algoritmos principales de este estudio comprendieron la exploración de entornos, el
-mapeo en dos dimensiones de los entornos y la generación óptima de trayectorias. Estos algoritmos
-fueron específicamente diseñados y adaptados para su implementación en vehículos
-móviles de tracción diferencial.
-La motivación principal detrás de esta investigación es la necesidad de comprender cómo
-un vehículo de tracción diferencial puede interactuar de manera efectiva en un entorno
-desconocido. Se asumió que el vehículo está equipado únicamente con sensores de distancia
-colocados estratégicamente en posiciones específicas, sensores para determinar la posición
-de las ruedas y una brújula. Además, se consideró un sistema de posicionamiento respecto a
-entorno de simulación para el vehículo, únicamente con el propósito de comparar y validar
-la posición estimada.
-Para lograr que el vehículo interactuara con éxito en su entorno, se realizaron diferentes
-iteraciones de los tres algoritmos principales utilizando dos tipos diferentes de sensores de
-distancia en el vehículo. Los resultados de estas iteraciones permitieron determinar la opción
-óptima de sensor de distancia para aplicar en los algoritmos desarrollados.
-La validación de los algoritmos desarrollados se llevó a cabo mediante simulaciones
-computarizadas, en un entorno que comprende entornos con diferentes características. Durante
-este proceso, se evaluó la precisión de los algoritmos, teniendo en cuenta factores como
-el tiempo de simulación y la posición inicial del vehículo. Estas pruebas proporcionaron una
-comprensión más profunda de cómo los algoritmos se desempeñan en condiciones diversas y
-cómo pueden optimizarse para aplicaciones prácticas en la navegación autónoma de vehículos
-de tracción diferencial.
+Este proyecto es un controlador para un robot simulado desarrollado en Webots, un entorno de simulación de robótica 3D. El controlador permite que el robot explore su entorno, evitando obstáculos y registrando su posición y orientación en todo momento. El proyecto se compone de múltiples archivos que implementan diferentes funcionalidades del controlador.
 
-## Estructura del Repositorio
+## Características Clave
 
-El repositorio está organizado en las siguientes carpetas:
+- Control de movimiento del robot.
+- Exploración autónoma del entorno.
+- Odometría para rastrear la posición y orientación del robot.
+- Detección y evitación de obstáculos.
+- Registro de datos de posición y orientación en tiempo real.
+- Generación de gráficos para análisis.
 
-1. **Base pruebas sensores**: Contiene el diseño físico de la base utilizada para validar los valores de lectura de los sensores de distancia.
+## Requisitos
 
-   ![Base pruebas sensores](Anexos/BaseSensores/BaseIso.png)
+Antes de ejecutar este controlador, asegúrate de tener instalado Webots R2023a, el entorno de simulación robótica en el que se ejecutará este código.
 
-2. **prototipo**: Contiene algoritmos relacionados con el mapeo, generación de trayectorias, etc.
+## Instrucciones de Instalación
 
-   ![Prototipo](Anexos/Webots/mundoWebots_top.png)
+1. Clona este repositorio en tu máquina local:
 
-3. **webots**: Contiene el mundo para la simulación de algoritmos de exploración, mapeo y generación de trayectorias en Webots.
+git clone https://github.com/tuusuario/nombrerepositorio.git
 
-   ![Webots](Anexos/GeneracioTrayectoria/MuestraTrayectoriaCalculada_3D.png)
+2. Abre el proyecto en Webots y configura el mundo de simulación.
 
+3. Ejecuta el proyecto en Webots y observa el comportamiento del robot.
+
+## Uso
+
+El controlador funciona en el entorno de simulación Webots y permite al robot moverse de manera autónoma, evitando obstáculos y registrando su posición y orientación. Puedes modificar los parámetros y las rutinas de exploración según tus necesidades.
+
+## Estructura del Proyecto
+
+El proyecto se divide en varios archivos, cada uno con una funcionalidad específica:
+
+- `Rot_Control.py`: Implementa el control de rotación del robot.
+- `Explorar.py`: Contiene la lógica de exploración del entorno.
+- `Condiciones_Giro.py`: Gestiona las decisiones de giro del robot.
+- `Odometria.py`: Realiza el seguimiento de la odometría del robot.
+- `Graficas.py`: Genera gráficos para el análisis de datos.
+
+
+## Contacto
+
+Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto:
+
+- Fredy Godoy 
+- Correo electrónico: god19260@uvg.edu.gt
+- Repositorio: https://github.com/god19260/Tesis_WS_FredyGodoy19260.git
